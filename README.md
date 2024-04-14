@@ -13,6 +13,25 @@ In addition, our DATA Summarizer sets a new standard in data analysis. Whether y
 
 Join the Fast Grow community today and revolutionize the way you analyze content. Experience the power of AI-driven insights and propel your growth journey with confidence.
 
+
+
+##Technologies Used:
+   > Flask Framework: Fast Grow is built using Flask, a lightweight and efficient web framework for Python, enabling rapid development of web applications.
+  
+   > Python: The project is primarily developed in Python, a versatile and powerful programming language well-suited for natural language processing (NLP) tasks.
+  
+   > Natural Language Processing (NLP): Leveraging NLP techniques and methodologies, Fast Grow extracts valuable insights from textual data, enabling users to understand and analyze content more 
+    effectively.
+ 
+   > Libraries: Fast Grow utilizes various Python libraries for different functionalities, including:
+     > NumPy: For efficient numerical operations and data manipulation.
+     > Pandas: For data analysis and manipulation, particularly useful for handling tabular data.
+     > NLTK (Natural Language Toolkit): A comprehensive library for NLP tasks such as tokenization, stemming, and sentiment analysis.
+     > YouTube Data API: Fast Grow integrates with the YouTube Data API to fetch comments from YouTube videos, providing valuable user feedback for analysis.
+     > Hugging Face API: For text summarization, Fast Grow utilizes the Hugging Face API, which offers state-of-the-art natural language processing models and tools.
+
+Sentiment Analysis: Fast Grow employs sentiment analysis techniques to determine the polarity of sentences, categorizing them as negative, positive, or neutral. This helps users gauge the overall sentiment conveyed in the text.
+
 ## To Run the App
 
 1. Clone the repository:
