@@ -24,11 +24,16 @@ Join the Fast Grow community today and revolutionize the way you analyze content
     effectively.
  
    > Libraries: Fast Grow utilizes various Python libraries for different functionalities, including:
-     > NumPy: For efficient numerical operations and data manipulation.
-     > Pandas: For data analysis and manipulation, particularly useful for handling tabular data.
-     > NLTK (Natural Language Toolkit): A comprehensive library for NLP tasks such as tokenization, stemming, and sentiment analysis.
-     > YouTube Data API: Fast Grow integrates with the YouTube Data API to fetch comments from YouTube videos, providing valuable user feedback for analysis.
-     > Hugging Face API: For text summarization, Fast Grow utilizes the Hugging Face API, which offers state-of-the-art natural language processing models and tools.
+
+                > NumPy: For efficient numerical operations and data manipulation.
+
+                > Pandas: For data analysis and manipulation, particularly useful for handling tabular data.
+                
+                > NLTK (Natural Language Toolkit): A comprehensive library for NLP tasks such as tokenization, stemming, and sentiment analysis.
+                
+                > YouTube Data API: Fast Grow integrates with the YouTube Data API to fetch comments from YouTube videos, providing valuable user feedback for analysis.
+               
+                > Hugging Face API: For text summarization, Fast Grow utilizes the Hugging Face API, which offers state-of-the-art natural language processing models and tools.
 
 Sentiment Analysis: Fast Grow employs sentiment analysis techniques to determine the polarity of sentences, categorizing them as negative, positive, or neutral. This helps users gauge the overall sentiment conveyed in the text.
 
