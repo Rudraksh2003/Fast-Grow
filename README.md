@@ -1,6 +1,7 @@
 # Fast Grow Content Analyzer
 
-![Fast Grow Logo]([fast-grow-logo.png](https://github.com/Rudraksh2003/Fast-Grow-Content-Analyzer/blob/main/static/apple-touch-icon.png))
+![Fast Grow Logo](static/apple-touch-icon.png)
+
 
 ## Description
 
@@ -19,12 +20,13 @@ Join the Fast Grow community today and revolutionize the way you analyze content
     git clone https://github.com/Rudraksh2003/Fast-Grow-Content-Analyzer.git
  ```
 
-3. Navigate to the project directory:
+2. Navigate to the project directory:
    ```
    cd Fast-Grow-Content-Analyzer
  ```
-
-4. Open two separate terminals:
+3. Add Youtube API key in Secrets.toml
+4. Add API key in data.py
+5. Open two separate terminals:
 
 - **Terminal 1:**
   ```
