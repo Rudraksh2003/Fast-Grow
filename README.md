@@ -15,7 +15,7 @@ Join the Fast Grow community today and revolutionize the way you analyze content
 
 
 
-##Technologies Used:
+## Technologies Used:
    > Flask Framework: Fast Grow is built using Flask, a lightweight and efficient web framework for Python, enabling rapid development of web applications.
   
    > Python: The project is primarily developed in Python, a versatile and powerful programming language well-suited for natural language processing (NLP) tasks.
