@@ -1,0 +1,169 @@
+.navbar{
+
+    background-color: antiquewhite;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    width: 100%;
+    height: 5%;
+    margin-left: 4.5%;
+    margin-right: 2.5%;
+    margin-top: 25px;
+   border-radius: 25%;
+   text-align: center
+    
+};
+.nav-link{
+    color: black;
+
+}
+.ogo{
+    margin: 0%;
+    padding: 0%;
+     text-align: left;
+     height:100px;
+     width: 200px;
+    
+
+
+}
+.link{
+    margin: 0%;
+    padding: 0%;
+    text-align: right;
+    margin-right: 5%;
+    height:100px;
+     width: 1000px;
+    
+
+}
+.l{
+    margin-right: 50px;
+
+};
+.mo{
+margin-left: 50px;
+    margin-right: 50px;
+};
+#footer-subscribe {
+    border-color: #ff5838;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .s-flex-rev {
+        flex-direction: row-reverse;
+    }
+    .s-col-rev {
+        flex-direction: column-reverse !important;
+    }
+    .e-blog-text {
+        bottom: 2px !important;
+    }
+}
+i.fa-github.p-1 {
+    color: rgb(254, 250, 250);
+    background: #000;
+    background-image: radial-gradient(circle at 50% 50%, #000 0%, #000 24%, #333 25%, #333 100%);
+    background-size: 300% 300%;
+}
+i.fa.fa-envelope.p-1 {
+    color:rgb(248, 247, 250);
+    background: #0077b5;
+    
+    background-size: 300% 300%;
+}
+
+@media (min-width: 768px) {
+    .l-flex-rev {
+        flex-direction: row-reverse;
+    }
+}
+i.fa-twitter.p-1 {
+    color: white;
+    background: #1DA1F2;
+}
+
+i.fa-instagram.p-1 {
+    color: white;
+    background: #000;
+    background-image: radial-gradient(circle at 50% 50%, #000 0%, #000 24%, #333 25%, #333 100%);
+    background-size: 300% 300%;
+}
+
+i.fa-linkedin.p-1 {
+    color: white;
+    background: #0077b5;
+}
+
+.blog-grid div {
+    padding: 0;
+}
+
+i.fa.btn-outline-light {
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.chat-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chat-box {
+    height: 300px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"] {
+    width: calc(100% - 70px);
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+i.fa-linkedin.p-1 {
+    color: white;
+    background: #0077b5;
+}
+
+.blog-grid div {
+    padding: 0;
+}
+
+i.fa.btn-outline-light {
+    outline: none;
+    border: none;
+}
+.des{
+    text-align: center;
+}
