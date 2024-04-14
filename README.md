@@ -16,13 +16,13 @@ Join the Fast Grow community today and revolutionize the way you analyze content
 ## To Run the App
 
 1. Clone the repository:
-    ```
-    git clone https://github.com/Rudraksh2003/Fast-Grow-Content-Analyzer.git
  ```
-
+    git clone https://github.com/Rudraksh2003/Fast-Grow.git
+ ```
 2. Navigate to the project directory:
-   ```
-   cd Fast-Grow-Content-Analyzer
+
+```
+  cd Fast-Grow-Content-Analyzer
  ```
 3. Add Youtube API key in Secrets.toml
 4. Add API key in data.py
