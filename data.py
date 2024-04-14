@@ -6,7 +6,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-API_TOKEN = "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" 
+API_TOKEN = "put your api key for data summary" 
 
 @app.route("/", methods=["GET", "POST"])
 def Index():
