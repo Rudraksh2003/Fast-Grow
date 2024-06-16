@@ -1,17 +1,13 @@
 import requests
 from flask import Flask, render_template, request
 
-   
-
-
 app = Flask(__name__)
 
-API_TOKEN = "put your api key for data summary" 
+API_TOKEN = "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" 
 
 @app.route("/", methods=["GET", "POST"])
 def Index():
     return render_template("Data.html")
-
 
 @app.route("/Summarize", methods=["POST"])
 def Summarize():
@@ -39,7 +35,6 @@ def Summarize():
     else:
         return render_template("Data.html")
 
-
 @app.route('/index')
 def index():
     return render_template('index.html')
@@ -53,4 +48,5 @@ def pdf():
     return render_template('comment.html')
 
 if __name__ == '__main__':
-   app.run(debug=True, port=5002)  # Run the second app on port 5001
+    app.run(host='0.0.0.0', port=5001)  # Ensure this is 5001
+
