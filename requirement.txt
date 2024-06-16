@@ -1,0 +1,10 @@
+flask
+requests
+pandas
+nltk
+plotly
+colorama
+google-api-python-client
+toml
+streamlit
+gunicorn

@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    command: python app.py
+    ports:
+      - "5000:5000"
+    depends_on:
+      - data
+
+  data:
+    build: .
+    command: python data.py
+    ports:
+      - "5001:5001"
+
+
