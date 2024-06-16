@@ -59,8 +59,12 @@ Sentiment Analysis: Fast Grow employs sentiment analysis techniques to determine
 
 - **Terminal 2:**
   ```
-    python app2.py
+    python data.py
   ```
 
+```
+docker-compose up --build
 
+
+  ```
 
