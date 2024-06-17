@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fast-grow-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: fast-grow-app
+  template:
+    metadata:
+      labels:
+        app: fast-grow-app
+    spec:
+      containers:
+      - name: fast-grow-app
+        image: rudrakshladdha/fast-grow-app:latest
+        ports:
+        - containerPort: 5000
+
+
+
