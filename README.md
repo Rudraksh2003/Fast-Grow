@@ -70,26 +70,49 @@ docker-compose up --build
 
 fast-grow/
 ├── comment-backend/
+
 │   ├── Dockerfile
+
 │   ├── app.py
+
 │   ├── requirements.txt
+
 │   └── ...
+
 ├── data-backend/
+
 │   ├── Dockerfile
+
 │   ├── app.py
+
 │   ├── requirements.txt
+
 │   └── ...
+
 ├── infrastructure/
+
 │   ├── terraform/
+
 │   │   ├── main.tf
+
 │   │   ├── variables.tf
+
 │   │   └── ...
+
 │   └── ansible/
+
 │       ├── playbook.yml
+
 │       └── ...
+
 ├── jenkins/
+
 │   ├── Jenkinsfile
+
 │   └── ...
+
 └── monitoring/
+
     ├── docker-compose.yml
+    
     └── prometheus.yml
