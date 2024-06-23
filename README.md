@@ -3,7 +3,6 @@
 ![Fast Grow Logo](static/apple-touch-icon.png)
 
 
-Here's the updated README file with the MIT license included:
 
 ---
 
