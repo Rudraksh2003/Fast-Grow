@@ -7,10 +7,6 @@ Here's the updated README file with the MIT license included:
 
 ---
 
-# Fast Grow Content Analyzer
-
-![Fast Grow Logo](link_to_logo_image)
-
 ## Description
 
 Welcome to Fast Grow, your one-stop destination for cutting-edge content analysis tools. At Fast Grow, we harness the power of advanced AI technology to provide two essential services: YouTube Comment Key Point Finder and Data Summarizer.
