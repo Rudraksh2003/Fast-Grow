@@ -150,7 +150,7 @@ fast-grow/
 ## Contributors
 
 - **[Ritu Raj Bhardwaj](https://github.com/Rituraj1001)**: Developed the AI framework and backend services.
-- **[RUDRAKSH LADDHA](https://github.com/Rudraksh2003) **: Created static and dynamic files, integrated Flask to fetch HTML files, contributed to backend work, set up containers and Kubernetes, and implemented CI/CD with Jenkins and Terraform IaC. Also focused on UI/UX and made changes according to feedback.
+- **[RUDRAKSH LADDHA](https://github.com/Rudraksh2003)**: Created static and dynamic files, integrated Flask to fetch HTML files, contributed to backend work, set up containers and Kubernetes, and implemented CI/CD with Jenkins and Terraform IaC. Also focused on UI/UX and made changes according to feedback.
 
 ## License
 
