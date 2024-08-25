@@ -14,5 +14,12 @@ services:
     command: python data.py
     ports:
       - "5001:5001"
+  nginx:
+    build: .
+    ports:
+      - "90:90"
+    depends_on:
+      - app
+      - data
 
 
