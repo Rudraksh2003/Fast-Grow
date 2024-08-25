@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-API_TOKEN = "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" 
+API_TOKEN = "" 
 
 @app.route("/", methods=["GET", "POST"])
 def Index():
