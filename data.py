@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-API_TOKEN = "" 
+API_TOKEN = "HUGGING_API" 
 
 @app.route("/", methods=["GET", "POST"])
 def Index():
