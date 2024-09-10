@@ -8,7 +8,7 @@ on:
 env:
   DATA_BACKEND_IMAGE: rudrakshladdha/fast-grow-data
   COMMENT_BACKEND_IMAGE: rudrakshladdha/fast-grow-app
-  DOCKER_USERNAME: ${{ secrets.USERNAME }}  # Use GitHub Secrets for Docker username
+  DOCKER_USERNAME: rudrakshladdha # Use GitHub Secrets for Docker username
 
 jobs:
   build:
