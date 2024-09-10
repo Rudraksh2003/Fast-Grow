@@ -1,0 +1,70 @@
+# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  DATA_BACKEND_IMAGE: rudrakshladdha/fast-grow-data
+  COMMENT_BACKEND_IMAGE: rudrakshladdha/fast-grow-app
+  DOCKER_USERNAME: rudrakshladdha # Use GitHub Secrets for Docker username
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Install Docker Compose
+        run: |
+          sudo curl -L "https://github.com/docker/compose/releases/download/$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep tag_name | cut -d '"' -f 4)/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+          sudo chmod +x /usr/local/bin/docker-compose
+          docker-compose --version  # Verify installation
+
+      - name: Build Comment Backend Docker Image
+        run: |
+          echo "Building Comment Backend Docker Image..."
+          docker build -t ${{ env.COMMENT_BACKEND_IMAGE }} .
+          docker tag ${{ env.COMMENT_BACKEND_IMAGE }}:latest ${{ env.COMMENT_BACKEND_IMAGE }}:latest
+          echo "Comment Backend Docker Image built and tagged successfully."
+
+      - name: Build Data Backend Docker Image
+        run: |
+          echo "Building Data Backend Docker Image..."
+          docker build -t ${{ env.DATA_BACKEND_IMAGE }} .
+          docker tag ${{ env.DATA_BACKEND_IMAGE }}:latest ${{ env.DATA_BACKEND_IMAGE }}:latest
+          echo "Data Backend Docker Image built and tagged successfully."
+
+      - name: Login to Docker Hub
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ env.DOCKER_USERNAME }}" --password-stdin
+
+      - name: Push Data Backend Docker Image
+        run: |
+          echo "Pushing Data Backend Docker Image..."
+          docker push ${{ env.DATA_BACKEND_IMAGE }}:latest
+          echo "Data Backend Docker Image pushed successfully."
+
+      - name: Push Comment Backend Docker Image
+        run: |
+          echo "Pushing Comment Backend Docker Image..."
+          docker push ${{ env.COMMENT_BACKEND_IMAGE }}:latest
+          echo "Comment Backend Docker Image pushed successfully."
+
+      - name: Deploy with Docker Compose
+        run: |
+          echo "Deploying with Docker Compose..."
+          docker-compose down
+          docker-compose up -d --build
+          echo "Deployment with Docker Compose completed."
+
+      - name: Clean up workspace
+        run: |
+          echo "Cleaning workspace..."
+          rm -rf *
