@@ -8,7 +8,6 @@ on:
 env:
   DATA_BACKEND_IMAGE: rudrakshladdha/fast-grow-data
   COMMENT_BACKEND_IMAGE: rudrakshladdha/fast-grow-app
-  DOCKER_USERNAME: rudrakshladdha
 
 jobs:
   build:
@@ -36,7 +35,7 @@ jobs:
           echo "Data Backend Docker Image built and tagged successfully."
 
       - name: Login to Docker Hub
-        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_PROFILE }}" --password-stdin
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
 
       - name: Push Data Backend Docker Image
         run: |
